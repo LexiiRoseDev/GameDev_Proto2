@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\temp\\gamedev_proto2\\proto2\\source\\proto2\\proto2.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\temp\\gamedev_proto2\\proto2\\intermediate\\build\\win64\\x64\\proto2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\temp\\gamedev_proto2\\proto2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proto2\\definitions.proto2.h",
+            "c:\\temp\\gamedev_proto2\\proto2\\source\\proto2\\proto2.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
