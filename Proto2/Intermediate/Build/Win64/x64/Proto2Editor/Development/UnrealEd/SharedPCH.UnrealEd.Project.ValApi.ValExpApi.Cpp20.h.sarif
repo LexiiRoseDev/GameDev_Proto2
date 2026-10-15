@@ -3,7 +3,1161 @@
     "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
     "runs": [
         {
-            "results": [],
+            "results": [
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3312,
+                                    "startColumn": 31,
+                                    "snippet": {
+                                        "text": "\tCOREUOBJECT_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::ActivateTrackingPropertyValueFlag': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3337,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual bool ActivateTrackingPropertyValueFlag(EPropertyValueFlags Flags, void* Data) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::IsTrackingPropertyValueFlag': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3338,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual bool IsTrackingPropertyValueFlag(EPropertyValueFlags Flags, const void* Data) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::HasPropertyValueFlag': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3339,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual bool HasPropertyValueFlag(EPropertyValueFlags Flags, const void* Data, const FProperty* Property, int32 ArrayIndex = 0) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::SetPropertyValueFlag': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3340,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual void SetPropertyValueFlag(EPropertyValueFlags Flags, bool bValue, void* Data, const FProperty* Property, int32 ArrayIndex = 0) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::ResetPropertyValueFlags': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3341,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual void ResetPropertyValueFlags(EPropertyValueFlags Flags, void* Data) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UStruct::SerializePropertyValueFlags': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h"
+                                },
+                                "region": {
+                                    "startLine": 3342,
+                                    "startColumn": 43,
+                                    "snippet": {
+                                        "text": "\tUE_INTERNAL COREUOBJECT_API virtual void SerializePropertyValueFlags(EPropertyValueFlags Flags, void* Data, FStructuredArchiveRecord Record, FArchiveFieldName Name) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FArchiveState::GetSerializeContext': GetSerializeContext is not supported. Use FUObjectThreadContext::Get().GetSerializeContext(). - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/LinkerLoad.h"
+                                },
+                                "region": {
+                                    "startLine": 1584,
+                                    "startColumn": 52,
+                                    "snippet": {
+                                        "text": "\tCOREUOBJECT_API virtual FUObjectSerializeContext* GetSerializeContext() override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectRedirector.h"
+                                },
+                                "region": {
+                                    "startLine": 39,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Animation/AnimationAsset.h"
+                                },
+                                "region": {
+                                    "startLine": 1197,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/Blueprint.h"
+                                },
+                                "region": {
+                                    "startLine": 909,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObjectBaseUtility::GetVersePath': This API is internal to the engine. As such, there is no guarantee that it won't change or be removed in future releases. Please use at your own risk."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/BlueprintGeneratedClass.h"
+                                },
+                                "region": {
+                                    "startLine": 584,
+                                    "startColumn": 42,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual UE::Core::FVersePath GetVersePath() const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UClass::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/BlueprintGeneratedClass.h"
+                                },
+                                "region": {
+                                    "startLine": 591,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Public/Animation/AnimCurveMetadata.h"
+                                },
+                                "region": {
+                                    "startLine": 197,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h"
+                                },
+                                "region": {
+                                    "startLine": 2370,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FTickableObjectBase::IsAllowedToTick': Use IsTickable for conditional ticks and SetTickableTickType to change the tick type after initial registration - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Public/Subsystems/WorldSubsystem.h"
+                                },
+                                "region": {
+                                    "startLine": 66,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual bool IsAllowedToTick() const override final;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/World.h"
+                                },
+                                "region": {
+                                    "startLine": 2996,
+                                    "startColumn": 22,
+                                    "snippet": {
+                                        "text": "\tUE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UAnimationAsset::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Animation/AnimSequenceBase.h"
+                                },
+                                "region": {
+                                    "startLine": 155,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Animation/Skeleton.h"
+                                },
+                                "region": {
+                                    "startLine": 617,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ICompressedAnimData::SerializeCompressedData': SerializeCompressedData now accepts the DataOwner as an argument - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Public/Animation/AnimCompressionTypes.h"
+                                },
+                                "region": {
+                                    "startLine": 522,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void SerializeCompressedData(class FArchive& Ar) override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UAnimSequenceBase::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Animation/AnimSequence.h"
+                                },
+                                "region": {
+                                    "startLine": 390,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Curves/CurveBase.h"
+                                },
+                                "region": {
+                                    "startLine": 98,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'USkinnedMeshComponent::UpdateSlaveComponent': This method has been deprecated. Please use UpdateFollowerComponent instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
+                                },
+                                "region": {
+                                    "startLine": 2028,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual void UpdateSlaveComponent() override { UpdateFollowerComponent(); };"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'USkinnedMeshComponent::SetSkeletalMesh': Use USkeletalMeshComponent::SetSkeletalMesh() or SetSkinnedAssetAndUpdate() instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
+                                },
+                                "region": {
+                                    "startLine": 2036,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void SetSkeletalMesh(class USkeletalMesh* NewMesh, bool bReinitPose = true) override;  // SetSkeletalMesh may remain and become a UFUNCTION but lose its virtual after it is removed from the SkinnedMeshComponent API"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FGraphActionListBuilderBase::AddAction': Overriding the schema action category is no longer supported, set the category via CosmeticUpdateRootCategory or CosmeticUpdateCategory - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/EdGraph/EdGraphSchema.h"
+                                },
+                                "region": {
+                                    "startLine": 629,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void AddAction(const TSharedPtr<FEdGraphSchemaAction>& NewAction, FString const& Category) override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FGraphActionListBuilderBase::AddActionList': Collections of Action lists were ambiguous and unused - make a compound FEdGraphSchemaAction and Add it - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/EdGraph/EdGraphSchema.h"
+                                },
+                                "region": {
+                                    "startLine": 631,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void AddActionList(const TArray<TSharedPtr<FEdGraphSchemaAction> >& NewActions, FString const& Category = FString()) override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UNetConnection::IsNetReady': Replaced with a version that doesn't have a saturate option. Call Saturate() directly if passing true before. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/ChildConnection.h"
+                                },
+                                "region": {
+                                    "startLine": 64,
+                                    "startColumn": 16,
+                                    "snippet": {
+                                        "text": "\tvirtual int32 IsNetReady(bool Saturate) override"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/CurveTable.h"
+                                },
+                                "region": {
+                                    "startLine": 88,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/DataTable.h"
+                                },
+                                "region": {
+                                    "startLine": 158,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/SkeletalMesh.h"
+                                },
+                                "region": {
+                                    "startLine": 2506,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'USkinnedAsset::GetLODInfoArray': Use GetLODInfo and GetLODNum instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/SkeletalMesh.h"
+                                },
+                                "region": {
+                                    "startLine": 2907,
+                                    "startColumn": 46,
+                                    "snippet": {
+                                        "text": "\tvirtual const TArray<FSkeletalMeshLODInfo>& GetLODInfoArray() const override"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'USkinnedAsset::GetLODInfoArray': Use GetLODInfo and GetLODNum instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/SkeletalMesh.h"
+                                },
+                                "region": {
+                                    "startLine": 2895,
+                                    "startColumn": 40,
+                                    "snippet": {
+                                        "text": "\tvirtual TArray<FSkeletalMeshLODInfo>& GetLODInfoArray() override"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/StaticMesh.h"
+                                },
+                                "region": {
+                                    "startLine": 1771,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/Texture.h"
+                                },
+                                "region": {
+                                    "startLine": 2003,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UTexture::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Engine/Texture2D.h"
+                                },
+                                "region": {
+                                    "startLine": 125,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UMaterialExpression::GetInputsView': Use FExpressionInputIterator instead or GetInput() directly. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionMaterialFunctionCall.h"
+                                },
+                                "region": {
+                                    "startLine": 125,
+                                    "startColumn": 51,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual TArrayView<FExpressionInput*> GetInputsView() override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FMaterial::ShouldInlineShaderCode': ShouldInlineShaderCode is no longer used when packaging shader maps. If you rely on this for some reason please reach out to the UE rendering team. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Public/MaterialShared.h"
+                                },
+                                "region": {
+                                    "startLine": 3081,
+                                    "startColumn": 15,
+                                    "snippet": {
+                                        "text": "\tvirtual bool ShouldInlineShaderCode() const override { return false; }"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'UObject::GetAssetRegistryTags': Implement the version that takes FAssetRegistryTagsContext instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/Sound/SoundWave.h"
+                                },
+                                "region": {
+                                    "startLine": 1153,
+                                    "startColumn": 26,
+                                    "snippet": {
+                                        "text": "\tENGINE_API virtual void GetAssetRegistryTags(TArray<FAssetRegistryTag>& OutTags) const override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'Chaos::FImplicitObject::GetRadius': Please use GetRadiusf instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Box.h"
+                                },
+                                "region": {
+                                    "startLine": 104,
+                                    "startColumn": 17,
+                                    "snippet": {
+                                        "text": "\t\tvirtual FReal GetRadius() const override"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 0,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Box.h"
+                                },
+                                "region": {
+                                    "startLine": 104,
+                                    "startColumn": 17,
+                                    "snippet": {
+                                        "text": "\t\tvirtual FReal GetRadius() const override"
+                                    }
+                                }
+                            },
+                            "message": {
+                                "text": "the template instantiation context (the oldest one first) is"
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/GeometryParticles.h"
+                                },
+                                "region": {
+                                    "startLine": 151,
+                                    "startColumn": 8,
+                                    "snippet": {
+                                        "text": "\tclass TGeometryParticlesImp : public TSimpleGeometryParticles<T, d>"
+                                    }
+                                }
+                            },
+                            "message": {
+                                "text": "while compiling class template 'Chaos::TGeometryParticlesImp'"
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/GeometryParticles.h"
+                                },
+                                "region": {
+                                    "startLine": 585,
+                                    "startColumn": 21,
+                                    "snippet": {
+                                        "text": "\t\t\t\tTBox<FReal, 3>::SerializeAsAABBs(Ar, MLocalBounds);"
+                                    }
+                                }
+                            },
+                            "message": {
+                                "text": "see reference to class template instantiation 'Chaos::TBox<Chaos::FReal,3>' being compiled"
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'Chaos::FImplicitObject::GetMargin': Please use GetMarginf instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/ImplicitObjectTransformed.h"
+                                },
+                                "region": {
+                                    "startLine": 169,
+                                    "startColumn": 16,
+                                    "snippet": {
+                                        "text": "\tvirtual FReal GetMargin() const override"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 0,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/ImplicitObjectTransformed.h"
+                                },
+                                "region": {
+                                    "startLine": 169,
+                                    "startColumn": 16,
+                                    "snippet": {
+                                        "text": "\tvirtual FReal GetMargin() const override"
+                                    }
+                                }
+                            },
+                            "message": {
+                                "text": "the template instantiation context (the oldest one first) is"
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/ImplicitObjectTransformed.h"
+                                },
+                                "region": {
+                                    "startLine": 452,
+                                    "startColumn": 61,
+                                    "snippet": {
+                                        "text": "\t\t\tTImplicitObjectTransformed<FReal, 3>* InnerTransformed = static_cast<TImplicitObjectTransformed<FReal, 3>*>(NewTransformed.GetReference());"
+                                    }
+                                }
+                            },
+                            "message": {
+                                "text": "see reference to class template instantiation 'Chaos::TImplicitObjectTransformed<Chaos::FReal,3,true>' being compiled"
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'Chaos::FImplicitObject::GetRadius': Please use GetRadiusf instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/ImplicitObjectTransformed.h"
+                                },
+                                "region": {
+                                    "startLine": 175,
+                                    "startColumn": 16,
+                                    "snippet": {
+                                        "text": "\tvirtual FReal GetRadius() const override"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'IAssetEditorInstance::CloseWindow': Use CloseWindow that takes in an EAssetEditorCloseReason instead - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/roseo/Documents/Uni_Stuff/Year_3/GameDev_Proto2/Proto2/Intermediate/Build/Win64/x64/Proto2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.6/Engine/Source/Editor/UnrealEd/Public/Toolkits/AssetEditorToolkit.h"
+                                },
+                                "region": {
+                                    "startLine": 167,
+                                    "startColumn": 28,
+                                    "snippet": {
+                                        "text": "\tUNREALED_API virtual bool CloseWindow() override;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
             "tool": {
                 "driver": {
                     "name": "MSVC",

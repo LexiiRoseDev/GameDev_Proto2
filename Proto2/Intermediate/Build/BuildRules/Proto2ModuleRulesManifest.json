@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\temp\\GameDev_Proto2\\Proto2\\Source\\Proto2\\Proto2.Build.cs",
-		"C:\\temp\\GameDev_Proto2\\Proto2\\Source\\Proto2.Target.cs",
-		"C:\\temp\\GameDev_Proto2\\Proto2\\Source\\Proto2Editor.Target.cs"
+		"C:\\Users\\roseo\\Documents\\Uni_Stuff\\Year_3\\GameDev_Proto2\\Proto2\\Source\\Proto2\\Proto2.Build.cs",
+		"C:\\Users\\roseo\\Documents\\Uni_Stuff\\Year_3\\GameDev_Proto2\\Proto2\\Source\\Proto2.Target.cs",
+		"C:\\Users\\roseo\\Documents\\Uni_Stuff\\Year_3\\GameDev_Proto2\\Proto2\\Source\\Proto2Editor.Target.cs"
 	],
 	"EngineVersion": "5.6.1"
 }
