@@ -873,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 3
+  jumpForce: 6.5
 --- !u!70 &1759173751
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
