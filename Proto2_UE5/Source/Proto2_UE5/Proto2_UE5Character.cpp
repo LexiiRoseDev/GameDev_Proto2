@@ -92,7 +92,7 @@ void AProto2_UE5Character::Look(const FInputActionValue& Value)
 
 void AProto2_UE5Character::DoMove(float Right, float Forward)
 {
-	if (GetController() != nullptr)
+	/* if (GetController() != nullptr)
 	{
 		// find out which way is forward
 		const FRotator Rotation = GetController()->GetControlRotation();
@@ -107,7 +107,8 @@ void AProto2_UE5Character::DoMove(float Right, float Forward)
 		// add movement 
 		AddMovementInput(ForwardDirection, Forward);
 		AddMovementInput(RightDirection, Right);
-	}
+	}*/
+	AddMovementInput(FVector(1.f, 0.f, 0.f), Right);
 }
 
 void AProto2_UE5Character::DoLook(float Yaw, float Pitch)
@@ -115,8 +116,8 @@ void AProto2_UE5Character::DoLook(float Yaw, float Pitch)
 	if (GetController() != nullptr)
 	{
 		// add yaw and pitch input to controller
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
+		// AddControllerYawInput(Yaw);
+		// AddControllerPitchInput(Pitch);
 	}
 }
 
