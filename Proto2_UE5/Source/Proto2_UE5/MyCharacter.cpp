@@ -11,10 +11,40 @@ AMyCharacter::AMyCharacter()
 
 }
 
+void AMyCharacter::Move(const FInputActionValue& Value)
+{
+	const FVector2D MovementValue = Value.Get<FVector2D>();
+	
+	if (Controller)
+	{
+		const FVector Right = GetActorRightVector();
+		AddMovementInput(Right, MovementValue.Y);
+		
+		const FVector Forward = GetActorForwardVector();
+		AddMovementInput(Forward, MovementValue.X);
+	}
+}
+
+
 // Called when the game starts or when spawned
 void AMyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	checkf(GEngine != nullptr, TEXT("Can only be used in EnhancedInputComponent"));
+	
+	APlayerController* PlayerController = Cast<APlayerController>(Controller);
+	
+	if (PlayerController)
+	{
+		UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
+		if (Subsystem)
+		{
+			Subsystem->AddMappingContext(PlayerControlContext, 0);
+		}
+	}
+	
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("MyCharacter Online!"));
 	
 }
 
@@ -28,7 +58,10 @@ void AMyCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
+	if (EnhancedInputComponent)
+	{
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AMyCharacter::Move);
+	}
 }
 

@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class Proto2_UE5 : ModuleRules
 {
-	public Proto2_UE5(ReadOnlyTargetRules Target) : base(Target)
+	public Proto2_UE5(ReadOnlyTargetRules target) : base(target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
