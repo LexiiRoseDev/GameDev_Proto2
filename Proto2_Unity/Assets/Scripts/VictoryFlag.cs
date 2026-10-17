@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class VictoryFlag : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public GameObject VictoryScreen;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if(collision.CompareTag("Player"))
         {
-
-            Debug.Log("YOU WIN");
+            VictoryScreen.SetActive(true);
+            Time.timeScale = 0f; 
+            Debug.Log("You Win!"); // Debug 
         }
     }
 }
