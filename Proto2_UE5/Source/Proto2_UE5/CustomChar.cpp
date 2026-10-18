@@ -16,6 +16,20 @@ void ACustomChar::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	checkf(GEngine != nullptr, TEXT("Can only be used in Enhanced Components"));
+	
+	APlayerController* PlayerController = Cast<APlayerController>(Controller);
+	
+	if (PlayerController)
+	{
+		UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
+		if (Subsystem)
+		{
+			Subsystem->AddMappingContext(PlayerControlContext,0);
+		}
+	}
+	
+	GEngine->AddOnScreenDebugMessage(-1,15.0f, FColor::Green, TEXT("CustomChar Online!"));
 }
 
 // Called every frame
@@ -28,7 +42,25 @@ void ACustomChar::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ACustomChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
+	if (EnhancedInputComponent)
+	{
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACustomChar::Move);
+	}
 
+}
+
+void ACustomChar::Move(const FInputActionValue& Value)
+{
+	const FVector2D MovementValue = Value.Get<FVector2D>();
+	
+	if (Controller)
+	{
+		const FVector Right = GetActorRightVector();
+		AddMovementInput(Right, MovementValue.X);
+	
+		const FVector Forward = GetActorForwardVector();
+		AddMovementInput(Forward, MovementValue.Y);
+	}
 }
 
