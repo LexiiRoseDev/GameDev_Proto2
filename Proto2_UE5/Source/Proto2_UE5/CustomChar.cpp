@@ -46,6 +46,7 @@ void ACustomChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	if (EnhancedInputComponent)
 	{
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACustomChar::Move);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACustomChar::DoJump);
 	}
 
 }
@@ -57,10 +58,15 @@ void ACustomChar::Move(const FInputActionValue& Value)
 	if (Controller)
 	{
 		const FVector Right = GetActorRightVector();
-		AddMovementInput(Right, MovementValue.X);
+		AddMovementInput(Right, MovementValue.Y);
 	
 		const FVector Forward = GetActorForwardVector();
-		AddMovementInput(Forward, MovementValue.Y);
+		AddMovementInput(Forward, MovementValue.X);
 	}
 }
 
+void ACustomChar::DoJump(const FInputActionValue& Value)
+{
+	const bool JumpTriggered = Value.Get<bool>();
+	Jump();
+}
