@@ -27,6 +27,9 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	TObjectPtr<UInputAction> MoveAction;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+	TObjectPtr<UInputAction> JumpAction;
 
 public:	
 	// Called every frame
@@ -37,5 +40,8 @@ public:
 	
 	UFUNCTION()
 	void Move(const FInputActionValue& Value);
+	
+	UFUNCTION()
+	void DoJump(const FInputActionValue& Value);
 
 };

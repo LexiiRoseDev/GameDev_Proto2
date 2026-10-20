@@ -11,21 +11,6 @@ ACustomChar::ACustomChar()
 
 }
 
-void ACustomChar::Move(const FInputActionValue& Value)
-{
-	const FVector2D MovementValue = Value.Get<FVector2D>();
-	
-	if (Controller)
-	{
-		const FVector Right = GetActorRightVector();
-		AddMovementInput(Right, MovementValue.Y);
-		
-		const FVector Forward = GetActorForwardVector();
-		AddMovementInput(Forward, MovementValue.X);
-	}
-}
-
-
 // Called when the game starts or when spawned
 void ACustomChar::BeginPlay()
 {
@@ -62,5 +47,26 @@ void ACustomChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	if (EnhancedInputComponent)
 	{
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ACustomChar::Move);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACustomChar::DoJump);
 	}
+}
+
+void ACustomChar::Move(const FInputActionValue& Value)
+{
+	const FVector2D MovementValue = Value.Get<FVector2D>();
+	
+	if (Controller)
+	{
+		const FVector Right = GetActorRightVector();
+		AddMovementInput(Right, MovementValue.Y);
+		
+		const FVector Forward = GetActorForwardVector();
+		AddMovementInput(Forward, MovementValue.X);
+	}
+}
+
+void ACustomChar::DoJump(const FInputActionValue& Value)
+{
+	const bool JumpTriggered = Value.Get<bool>();
+	Jump();
 }
